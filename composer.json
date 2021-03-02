@@ -1,0 +1,40 @@
+{
+    "name": "aoeng/laravel-aliyun-oss",
+    "description": "aliyun oss for laravel",
+    "type": "library",
+    "require": {
+        "php": ">=7.4.0",
+        "laravel/framework": "^8.0.4",
+        "aliyuncs/oss-sdk-php": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "license": "TIM",
+    "authors": [
+        {
+            "name": "Dang",
+            "email": "yofengge@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aoeng\\Laravel\\Aliyun\\OSS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aoeng\\Laravel\\Aliyun\\OSS\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aoeng\\Laravel\\Aliyun\\OSS\\AliyunOssServiceProvider"
+            ]
+        }
+    }
+}
